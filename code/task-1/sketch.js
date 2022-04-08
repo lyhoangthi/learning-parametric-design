@@ -30,11 +30,18 @@ function draw() {
 
   
   strokeWeight(0);
-  fill(129,21,250);
+  fill(245,212,35);
   arc(200,200,
     600,600,
-    Math.PI/180*30,
-    Math.PI/180*-180);
+    Math.PI/180*90,
+    Math.PI/180*-210);
+
+  strokeWeight(0);
+  fill(245,199,36);
+  arc(200,200,
+    600,600,
+    Math.PI/180*90,
+    Math.PI/180*-240);
 
 
   strokeWeight(0);
@@ -52,14 +59,14 @@ function draw() {
   rect (100, 0, 100, 200);
   rect (0, 100, 200, 100);
 
-  fill(175,56,255);
+  fill(219,46,11);
   circle(350,350,100);
 
-  fill(175,56,255);
+  fill(255,255,255);
   circle(50,50,100);
 
   strokeWeight (50);
-  stroke(250,255,250);
+  stroke(219,46,11);
   point(50,50);
 
   strokeWeight (7);
@@ -68,7 +75,7 @@ function draw() {
   
   fill('rgba(0,0,0,0)');
   strokeWeight (50);
-  stroke(250,255,250);
+  stroke(219,46,11);
   arc(0,400,
     700,650,
     Math.PI/180*270,
