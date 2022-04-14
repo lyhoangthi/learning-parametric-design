@@ -4,7 +4,7 @@ function preload(){
 
 const sketchWidth = 600;
 const sketchHeight = 600;
-const size = 5;
+const size = 10;
 
 function setup() {
   createCanvas(sketchWidth,sketchHeight);
@@ -17,10 +17,12 @@ function draw() {
   const columns = sketchWidth / size;
   const rows = sketchHeight / size;
 
-  for (let x = 3; x < columns; x += 1) {
-    for (let y = 3; y < rows; y += 1) {
-      fill(random(20,200), 20, 100);
+  for (let x = 0; x < columns; x += random(0,10)) {
+    for (let y = 0; y < rows; y += random(0,20)) {
+      fill(random(0,255), random(0,255), random(0,255));
+      circle(x * size, y * size, random(size));
       rect(x * size, y * size, random(size), random(size));
+      triangle(random(20,500),random(0,200),random(100,500),random(0,600),random(0,600),random(1,300));
     }
   }
 
