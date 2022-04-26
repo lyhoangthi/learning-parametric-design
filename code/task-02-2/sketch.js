@@ -31,11 +31,6 @@ function draw() {
       rect(x * size, y * size, random(size), random(size));
 
        
-    
-    
-    
-    
-  
-}
+    }
   }
 }
