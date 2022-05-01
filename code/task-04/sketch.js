@@ -42,14 +42,14 @@ function draw() {
 
 
       // Block horizontal
-      if (x === 3 && y === 1 ||
-          x === 0 && y === 4){
+        if (x === 3 && y === 1 ||
+            x === 0 && y === 4){
         fill(random(200));
         rect(x * size, y * size, size * 2, size, 8);
       }
 
       // 3 Block vertikal
-      if (x === 4 && y === 2){
+        if (x === 4 && y === 2){
         fill(random(255));
         rect(x * size, y * size, size, size * 3, 8);
       }
@@ -69,7 +69,7 @@ function draw() {
 
 
 
+noLoop();
 
-
-    }
+}
 
