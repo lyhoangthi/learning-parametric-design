@@ -4,7 +4,7 @@ function preload(){
 
 
 function setup() {
-  let c = createCanvas(800, 800);
+  createCanvas(800, 800);
   background(255);
   noFill();
   t = 0;
