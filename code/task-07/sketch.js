@@ -2,9 +2,6 @@ function preload(){
   // preload assets
 }
 
-var inc;
-
-
 
 function setup() {
   let c = createCanvas(800, 800);
