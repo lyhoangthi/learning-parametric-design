@@ -14,10 +14,6 @@ function setup() {
 }
 
 function draw() {
-  
-
-    fill('black');
-    text('EXHIBITION');
 
     stroke(230,20,20);
     strokeWeight(0.5);
