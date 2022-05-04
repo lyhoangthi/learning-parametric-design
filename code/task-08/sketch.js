@@ -11,9 +11,13 @@ let slider;
 
 function setup() {
   createCanvas(sketchWidth, sketchHeight);
-  slider = createSlider(0,10,1,0.25);
-  slider.position(0,400);
-  slider.size(100);
+  slider1 = createSlider(0,10,2,0.25);
+  slider1.position(0,400);
+  slider1.size(100);
+
+  slider2 = createSlider(0,10,4,0.25);
+  slider2.position(100,400);
+  slider2.size(100);
 
   for (let p = 0; p < 100; p += 1) {
     points.push({
@@ -35,9 +39,9 @@ function draw() {
       const y = angle * sin(rad);
 
       circle(
-        x + sketchWidth / slider.value(),
-        y + sketchHeight / slider.value(),
-        angle / 4);
+        x + sketchWidth / slider1.value(),
+        y + sketchHeight / slider1.value(),
+        angle / slider2.value());
 
         points[p].angle += 3;
         if (points[p].angle > maxAngle) {
