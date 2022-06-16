@@ -36,7 +36,7 @@ function draw() {
   textSize(40);
     text(('20.05.2022, 19 Uhr'),50,280);
 
-    //noLoop();
+    noLoop();
   }
   
   
